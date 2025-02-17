@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .view import home_page_view,  old_home_page_view
-
+from .view import home_page_view, about_view
 urlpatterns = [
     path("", home_page_view),  # "" make the path default
-    path("hello-world/", old_home_page_view),
+    path("about/", about_view),
+    path("hello-world/", home_page_view),
     path('admin/', admin.site.urls),
 ]
 # deciding where url go

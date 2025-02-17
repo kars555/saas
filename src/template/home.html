@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>{{title}}</h1>
+    <h1>{{page_title}}</h1>
     <p>{{request.user}} {{request.method}}</p>
 
-    <p>this page count :{{current_page_count}}</p>
-    <p>total : {{total}}</p>
+    <p>this page count :{{page_visit_count}}</p>
+    <p>percentage:{{percent}}</p>
+    <p>total : {{total_visit_count}}</p>
   </body>
 </html>
