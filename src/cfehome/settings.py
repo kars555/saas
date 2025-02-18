@@ -21,7 +21,7 @@ print("path==", BASE_DIR)
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0b%g5+(xpc1@hxl69$+2^k6p_(camxg0u%)!w7d5bvg)q_prg^'
+SECRET_KEY = config("DJANGO_SECRETE_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DJANGO_DEBUG", cast=bool)
